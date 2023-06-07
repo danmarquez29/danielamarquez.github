@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*  navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(117, 67, 67);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.25rem;
+}
+.navbar ul li a{
+    padding: 5px 5px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid rgb(84, 181, 194);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 875px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 5px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('bg.jpg') no-repeat center/cover;
+    height: 955px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+} 
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Portfolio Section */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: darkgray;
+    margin: 0px 0px;
+}
+#portfolio h1{
+    margin: 60px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 360px;
+    height: 640px;
+    padding: 30px;
+    margin: 30px;
+}
+.gallery img:hover{
+    background-color: rgb(78, 7, 7);
+    cursor: pointer;
+}
+
+/*----about----*/
+#about{
+    padding: 5px;
+    background-color: darkgray;
+}
+#about h1{
+    margin: 60px;
+}
+.about h1{
+    color: rgb(20, 4, 4);
+}
+.about-text{
+    padding-top: 30px;
+    font-size: 1.60rem;
+    margin: 45px 80px 50px 90px;
+}
+.main img{
+    margin: 10px;
+    width: 400px;
+    height: auto;
+}
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 905px;
+    background-color: darkgrey;
+}
+#contact h1{
+    margin: 60px;
+}
+#contact p{
+    font-size: 1.25rem;
+    margin: 50px;
+}
+
+/* footer */
+.footer{
+    padding: 40px;
+    text-align: center;
+}
